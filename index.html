@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Text Generator</title>
+    <title>Text Multplier</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -13,16 +13,18 @@
 
         <div class="left">
 
-            <form action="#">
-                
-                <input type="" placeholder="enter name" id="name" required>
-                <input type="number" placeholder="enter number" id="number" required>
+            <form action="#" class="left-content">
+                <div class="input-content">
+                    <input type="" placeholder="enter name" id="name" required>
+                    <input type="number" placeholder="enter number" id="number" required>
+                </div>
                 <button type="submit" id="submit">Submit</button>
             </form>
         </div>
         <div class="right">
-            <span id="ourText"></span>
-            <i class='bx bx-copy' ></i>
+            <!-- <span ></span> -->
+            <textarea name="" id="ourText" cols="30" rows="10"></textarea>
+            <i id="copyIcon" class='bx bx-copy'></i>
         </div>
         
     </div>

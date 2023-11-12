@@ -11,7 +11,7 @@ for(let i = 0; i < number;i++)
 { 
     
     let userText = Name.value;
-    text.innerHTML = text.innerHTML + `${userText}`;
+    text.innerHTML = text.innerHTML + ' ' + `${userText}`;
 }
 
 }

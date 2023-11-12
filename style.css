@@ -20,18 +20,88 @@ body
 
 .generator-content
 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 80vh;
     width: 90vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 .generator-content .left
 {
+    border: 2px solid rgb(8, 13, 72);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.left .left-content
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
+
     border: 2px solid red;
 }
 
-#ourText
+.left-content .input-content
+{
+    width: 100%;
+    /* border: 2px solid aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content .input-content input
+{
+    width: 48%;
+    height: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 1rem;
+    border:2px solid aqua;
+}
+
+.left-content #submit
 {
     border: 2px solid red;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
 
+.generator-content .right
+{
+    border: 2px solid rgb(8, 13, 72);
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.right textarea
+{
+    height: 100%;
+    width: 100%;
+}
+
+.right #copyIcon
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2rem;
+    /* border: 2px solid red; */
+    z-index: 1;
+    cursor: pointer;
 }
