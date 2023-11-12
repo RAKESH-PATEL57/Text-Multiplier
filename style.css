@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root
+{
+    --alpha-color:aqua;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.generator-content
+{
+    border: 2px solid red;
+    height: 80vh;
+    width: 90vw;
+}
+
+.generator-content .left
+{
+    border: 2px solid red;
+}
+
+#ourText
+{
+    border: 2px solid red;
+
+}
