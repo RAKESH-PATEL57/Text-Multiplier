@@ -22,6 +22,24 @@ body
     background: var(--bg-color);
 }
 
+.background
+{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    /* object-fit: cover; */
+    /* border: 2px solid red; */
+}
+
+.background img
+{
+    height: 100%;
+    width: 100vw;
+    /* object-fit: cover; */
+    position: absolute;
+    z-index: -1;
+}
+
 .generator-content
 {
     /* border: 2px solid red; */
@@ -42,7 +60,25 @@ body
     box-shadow: inset 0px 0px 10px var(--alpha-color);
     padding: 1rem;
     border-radius: 1rem;
+    position: relative;
 }
+
+.generator-content .left::before
+{
+    content: '';
+    position: absolute;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 1rem;
+    backdrop-filter:blur(5px);
+    z-index: -1;
+}
+
 
 .left .left-content
 {
@@ -78,6 +114,7 @@ body
     border-radius: 1rem;
     border:2px solid aqua;
     background: transparent;
+    color: var(--font-color);
 }
 
 .left-content .input-content input::placeholder
@@ -117,6 +154,23 @@ body
     position: relative;
     /* padding: 1rem; */
 }
+
+.generator-content .right::before
+{
+    content: '';
+    position: absolute;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 1rem;
+    backdrop-filter:blur(5px);
+    z-index: -1;
+}
+
 
 .right textarea
 {
