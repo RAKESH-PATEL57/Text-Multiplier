@@ -14,6 +14,27 @@ for(let i = 0; i < number;i++)
     text.innerHTML = text.innerHTML + ' ' + `${userText}`;
 }
 
+let copyBtn = document.querySelector('#copyIcon');
+copyBtn.addEventListener("click", function()
+{
+    let copyContent = document.querySelector('#ourText');
+    let vl = copyContent.innerHTML;
+    
+    vl.select ();
+    document.execCommand('copy');
+    console.log('click');
+});
+// copyBtn.onclick = () =>
+// {
+
+//     let copyContent = document.querySelector('#ourText');
+    
+//     copyContent.select ();
+//     document.execCommand('copy');
+//     console.log('click');
+// }
+
 }
+
 
 
